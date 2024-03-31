@@ -27,7 +27,7 @@ if (isset($_POST['processPayment'])) {
     // Call Hydrogen Payment API
     $curl = curl_init();
     curl_setopt_array($curl, array(
-        CURLOPT_URL => API_URL, 
+        CURLOPT_URL => API_URL,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => '',
         CURLOPT_MAXREDIRS => 10,
@@ -57,10 +57,8 @@ if (isset($_POST['processPayment'])) {
 
         // Redirect to Payment URL
         header('Location: ' . $paymentLink);
-        
     } else {
         // Display error message if payment initiation failed
         echo 'Initiate payment not successful: ' . $res->message;
-
     }
 }

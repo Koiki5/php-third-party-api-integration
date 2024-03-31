@@ -1,11 +1,10 @@
-<?php 
+<?php
 
 // Endpoint URL for Test/Prod and Authorization key
 define('API_URL', 'https://qa-api.hydrogenpay.com/bepayment/api/v1/Merchant/confirm-payment'); //TEST Endpoint
 define('AUTH_KEY', 'Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'); // Auth Key for Portal Dev
 
-if(isset($_GET['TransactionRef']))
-{
+if (isset($_GET['TransactionRef'])) {
     $transactionRef = $_GET['TransactionRef'];
 
     // Prepare request data
@@ -26,12 +25,12 @@ if(isset($_GET['TransactionRef']))
         CURLOPT_CUSTOMREQUEST => 'POST',
         CURLOPT_POSTFIELDS => json_encode($verifyRequest),
         CURLOPT_HTTPHEADER => array(
-            'Authorization: ' . AUTH_KEY, 
+            'Authorization: ' . AUTH_KEY,
             'Content-Type: application/json',
             'Cache-Control: no-cache'
         ),
     ));
-              
+
     $response = curl_exec($curl);
     curl_close($curl);
 
@@ -46,7 +45,6 @@ if(isset($_GET['TransactionRef']))
         echo 'Transaction Reference: ' . $res->data->transactionRef . '<br>';
         echo 'Payment Type: ' . $res->data->paymentType . '<br>';
         echo 'Recurring Card Token: ' . $res->data->recurringCardToken . '<br>';
-
     } else {
 
         // Display error message if payment initiation failed
@@ -54,5 +52,3 @@ if(isset($_GET['TransactionRef']))
         echo 'Error Message: ' . $res->message;
     }
 }
-
-?>

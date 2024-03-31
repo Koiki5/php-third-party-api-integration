@@ -82,7 +82,6 @@ The following steps will guide you through integrating the provided code sample 
 
 
 # Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
 
 If you discover a bug or have a solution to improve the Payment Gateway for Hydrogen,
 we welcome your contributions to enhance the code.
