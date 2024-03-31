@@ -2,7 +2,7 @@
 
 // Endpoint URL for Test/Prod and Authorization key
 define('API_URL', 'https://qa-dev.hydrogenpay.com/qa/bepay/api/v1/merchant/initiate-payment'); //TEST Endpoint
-define('AUTH_KEY', 'Bearer 63C1A50C1B8186489CE6CDBC79D41E448A061698A798CB2E4D40E8C0DD829689'); // Auth Key
+define('AUTH_KEY', 'Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'); // Auth Key
 
 // Check if the form was submitted
 if (isset($_POST['processPayment'])) {

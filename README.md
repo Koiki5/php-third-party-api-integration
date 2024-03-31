@@ -40,6 +40,12 @@ The following steps will guide you through integrating the provided code sample 
 
     3.  If the payment is successful, it displays the payment details. Otherwise, it shows an error message.
 
+#	API references
+
+    * https://dashboard.hydrogenpay.com/
+
+    * https://docs.hydrogenpay.com/docs/authentication
+
 
 # Request Parameters
 
@@ -74,6 +80,7 @@ The following steps will guide you through integrating the provided code sample 
 | 10002       | Custom | Invalid transactionId                 |
 | 9000        | Custom | Successful transaction                |
 
+
 # Contribute
 TODO: Explain how other users and developers can contribute to make your code better. 
 
@@ -97,6 +104,6 @@ we welcome your contributions to enhance the code.
         * Push your fix to the remote version of your branch and create a PR that aims to merge that branch into master.
         
         * After you follow the step above, the next stage will be waiting on us to merge your Pull Request.
-
+        
  Your contributions help us make the PG plugin even better for the community. Thank you!
 

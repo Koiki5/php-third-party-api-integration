@@ -2,7 +2,7 @@
 
 // Endpoint URL for Test/Prod and Authorization key
 define('API_URL', 'https://qa-api.hydrogenpay.com/bepayment/api/v1/Merchant/confirm-payment'); //TEST Endpoint
-define('AUTH_KEY', 'Bearer 63C1A50C1B8186489CE6CDBC79D41E448A061698A798CB2E4D40E8C0DD829689'); // Auth Key for Portal Dev
+define('AUTH_KEY', 'Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'); // Auth Key for Portal Dev
 
 if(isset($_GET['TransactionRef']))
 {
