@@ -29,7 +29,7 @@
 
 <body>
     <div class="">
-        <h3 class="mt-5">Hydrogen Payment Gateway</h3>
+        <h3 class="mt-5">Payment Gateway</h3>
         <form action="processPayment.php" method="POST" class="mt-3">
             <div class="mb-3">
                 <label for="customerName" class="form-label">Customer Name</label>
